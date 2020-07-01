@@ -17,16 +17,16 @@ const THCLogo = () => {
   const data = useStaticQuery(graphql`
     query {
       thcLogo: file(relativePath: { eq: "thc-logo@300x.png" }) {
-        childCloudinaryAsset {
+        childImageSharp {
           fluid(maxWidth: 300) {
-            ...CloudinaryAssetFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.thcLogo.childCloudinaryAsset.fluid} />
+  return <Img fluid={data.thcLogo.childImageSharp.fluid} />
 }
 
 export default THCLogo
