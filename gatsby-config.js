@@ -41,17 +41,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: "gatsby-transformer-cloudinary",
-      options: {
-        cloudName: "crjars",
-        apiKey: `${process.env.CLOUDINARY_API_KEY}`,
-        apiSecret: `${process.env.CLOUDINARY_API_SECRET}`,
+    // {
+    //   resolve: "gatsby-transformer-cloudinary",
+    //   options: {
+    //     cloudName: "crjars",
+    //     apiKey: `${process.env.CLOUDINARY_API_KEY}`,
+    //     apiSecret: `${process.env.CLOUDINARY_API_SECRET}`,
 
-        // This folder will be created if it doesn’t exist.
-        uploadFolder: "gatsby-cloudinary",
-      },
-    },
+    //     // This folder will be created if it doesn’t exist.
+    //     uploadFolder: "gatsby-cloudinary",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
