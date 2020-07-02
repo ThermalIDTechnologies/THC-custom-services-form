@@ -28,9 +28,10 @@ const Ol = styled.ol`
     counter-increment: my-awesome-counter;
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: subgrid;
+    grid-template-columns: 20px 1fr;
     grid-gap: 1rem;
     align-items: center;
+    justify-content: center;
 
     small {
       font-weight: normal;
